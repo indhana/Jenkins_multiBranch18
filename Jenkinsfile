@@ -1,4 +1,4 @@
-node('master') 
+node('built-in') 
 {
     stage('Continuous Download') 
 	{
@@ -6,7 +6,7 @@ node('master')
 	}
     stage('Continuous Build') 
 	{
-    sh label: '', script: 'mvn package'
+    sh label:ackage'
 	}
     stage('Continuous Deployment') 
 	{
